@@ -1,6 +1,11 @@
 {
   "hello": "hello world",
-  "project": {
-    "name": "venom.net"
+  "menu": {
+    "home": "Home",
+    "guide": "Guide",
+    "widgets": "Widgets",
+    "concepts": "Concepts",
+    "about": "About",
+    "privacy": "Privacy"
   }
 }

@@ -1,3 +1,8 @@
 {
-  "hello": "ciao mondo"
+  "hello": "ciao mondo",
+  "menu": {
+    "guide": "Guida",
+    "widgets": "Widget",
+    "concepts": "Concetti"
+  }
 }

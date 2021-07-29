@@ -1,7 +1,8 @@
 <template>
   <CmpHeader />
-  <div class="view about">
-    <h1>This is about page</h1>
+  <div class="view guide">
+    <h1>This is Guide page</h1>
+    <router-view></router-view>
   </div>
   <CmpFooter />
 </template>
@@ -10,7 +11,7 @@
 import CmpHeader from '@/components/shared/CmpHeader'
 import CmpFooter from '@/components/shared/CmpFooter'
 export default {
-  name: 'About',
+  name: 'Guide',
   components: {
     CmpHeader,
     CmpFooter

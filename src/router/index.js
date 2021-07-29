@@ -8,12 +8,41 @@ const routes = [
     component: Home
   },
   {
+    path: '/guide',
+    name: 'Guide',
+    component: () => import(/* webpackChunkName: "guide" */ '../views/Guide/Guide.vue'),
+    children: [
+      {
+        path: '',
+        name: 'GuideIndex',
+        component: () => import(/* webpackChunkName: "guide-index" */ '../views/Guide/Index.vue')
+      },
+      {
+        path: 'lesson-0',
+        name: 'GuideLesson0',
+        component: () => import(/* webpackChunkName: "guide-lesson-0" */ '../views/Guide/Lesson-0.vue')
+      }
+    ]
+  },
+  {
+    path: '/widgets',
+    name: 'Widgets',
+    component: () => import(/* webpackChunkName: "widgets" */ '../views/Widgets.vue')
+  },
+  {
+    path: '/concepts',
+    name: 'Concepts',
+    component: () => import(/* webpackChunkName: "concepts" */ '../views/Concepts.vue')
+  },
+  {
     path: '/about',
     name: 'About',
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
     component: () => import(/* webpackChunkName: "about" */ '../views/About.vue')
+  },
+  {
+    path: '/privacy',
+    name: 'Privacy',
+    component: () => import(/* webpackChunkName: "concepts" */ '../views/Privacy.vue')
   }
 ]
 
