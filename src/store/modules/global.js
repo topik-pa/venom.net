@@ -2,7 +2,12 @@ const state = {
   project: {
     name: 'venom.net',
     copyright: '2021',
-    mobile: 768
+    mobile: 768,
+    cookiePolicy: {
+      compareAfter: 3000,
+      duration: 120,
+      name: 'venom-cookie-policy'
+    }
   },
   author: {
     name: 'Marco',
