@@ -1,7 +1,11 @@
 <template>
   <CmpHeader />
-  <div class="view guide">
-    <h1>This is Guide page</h1>
+  <div class="view guides">
+    <h1>Le Guide di Venom</h1>
+    <nav>
+      <!--<router-link :to="{name: 'Preview', params: { id: 0 }}">Web Application da 0 al Deploy</router-link>-->
+      <router-link :to="{name: 'WebAppGuide'}">Web Application da 0 al Deploy</router-link>
+    </nav>
     <router-view></router-view>
   </div>
   <CmpFooter />
@@ -11,7 +15,7 @@
 import CmpHeader from '@/components/shared/CmpHeader'
 import CmpFooter from '@/components/shared/CmpFooter'
 export default {
-  name: 'Guide',
+  name: 'Guides',
   components: {
     CmpHeader,
     CmpFooter

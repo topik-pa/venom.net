@@ -8,19 +8,14 @@ const routes = [
     component: Home
   },
   {
-    path: '/guide',
-    name: 'Guide',
-    component: () => import(/* webpackChunkName: "guide" */ '../views/Guide/Guide.vue'),
+    path: '/guides',
+    name: 'Guides',
+    component: () => import(/* webpackChunkName: "guides" */ '../views/Guides/Guides.vue'),
     children: [
       {
-        path: '',
-        name: 'GuideIndex',
-        component: () => import(/* webpackChunkName: "guide-index" */ '../views/Guide/Index.vue')
-      },
-      {
-        path: 'lesson-0',
-        name: 'GuideLesson0',
-        component: () => import(/* webpackChunkName: "guide-lesson-0" */ '../views/Guide/Lesson-0.vue')
+        path: 'preview/:id',
+        name: 'Preview',
+        component: () => import(/* webpackChunkName: "preview" */ '../views/Guides/Preview.vue')
       }
     ]
   },
@@ -43,6 +38,11 @@ const routes = [
     path: '/privacy',
     name: 'Privacy',
     component: () => import(/* webpackChunkName: "concepts" */ '../views/Privacy.vue')
+  },
+  {
+    path: '/guide/web-app',
+    name: 'WebAppGuide',
+    component: () => import(/* webpackChunkName: "web-app-guide" */ '../views/Guides/WebApp/Index.vue')
   }
 ]
 

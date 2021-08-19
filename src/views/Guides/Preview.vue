@@ -1,12 +1,12 @@
 <template>
-  <div class="view guide">
-    <h1>This is Guide Index</h1>
-  </div>
+  <section>
+    <h2>Guide Preview - param: {{ $route.params.id }}</h2>
+  </section>
 </template>
 
 <script>
 export default {
-  name: 'GuideIndex',
+  name: 'Preview',
   data () {
     return {}
   }
