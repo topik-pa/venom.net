@@ -13,11 +13,26 @@ const routes = [
     component: () => import(/* webpackChunkName: "guides" */ '../views/Guides/Guides.vue'),
     children: [
       {
-        path: 'preview/:id',
-        name: 'Preview',
-        component: () => import(/* webpackChunkName: "preview" */ '../views/Guides/Preview.vue')
+        path: '/guides/:id',
+        name: 'Guide',
+        component: () => import(/* webpackChunkName: "guide" */ '../views/Guides/Guide.vue')
       }
     ]
+  },
+  {
+    path: '/guide/venom-app',
+    name: 'VenomAppGuide',
+    component: () => import(/* webpackChunkName: "venom-app-guide" */ '../views/Guides/VenomApp/Index.vue')
+  },
+  {
+    path: '/lessons',
+    name: 'Lessons',
+    component: () => import(/* webpackChunkName: "lessons" */ '../views/Lessons.vue')
+  },
+  {
+    path: '/lessons/:id',
+    name: 'LessonInstallGit',
+    component: () => import(/* webpackChunkName: "lesson-install-git" */ '../views/Lessons/LessonInstallGit.vue')
   },
   {
     path: '/widgets',
@@ -38,11 +53,6 @@ const routes = [
     path: '/privacy',
     name: 'Privacy',
     component: () => import(/* webpackChunkName: "concepts" */ '../views/Privacy.vue')
-  },
-  {
-    path: '/guide/web-app',
-    name: 'WebAppGuide',
-    component: () => import(/* webpackChunkName: "web-app-guide" */ '../views/Guides/WebApp/Index.vue')
   }
 ]
 

@@ -1,7 +1,7 @@
 <template>
     <nav v-show="isMenuOpen">
       <router-link :to="{name: 'Home'}">{{$t('menu.home')}}</router-link>
-      <router-link :to="{name: 'Guides'}">{{$t('menu.guides')}}</router-link>
+      <router-link :to="{name: 'Lessons'}">{{$t('menu.lessons')}}</router-link>
       <router-link :to="{name: 'Widgets'}">{{$t('menu.widgets')}}</router-link>
       <router-link :to="{name: 'Concepts'}">{{$t('menu.concepts')}}</router-link>
       <router-link :to="{name: 'About'}">{{$t('menu.about')}}</router-link>

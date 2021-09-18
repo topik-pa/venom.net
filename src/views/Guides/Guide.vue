@@ -1,12 +1,12 @@
 <template>
   <section>
-    <h2>Guide Preview - param: {{ $route.params.id }}</h2>
+    <h2>Guide - param: {{ $route.params.id }}</h2>
   </section>
 </template>
 
 <script>
 export default {
-  name: 'Preview',
+  name: 'Guide',
   data () {
     return {}
   }

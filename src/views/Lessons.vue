@@ -1,7 +1,8 @@
 <template>
   <CmpHeader />
-  <div class="view webapp">
-    <h2>WebApp Index</h2>
+  <div class="view lessons">
+    <h1>*Le lezioni*</h1>
+    <section>*Lista lezioni*</section>
   </div>
   <CmpFooter />
 </template>
@@ -10,7 +11,7 @@
 import CmpHeader from '@/components/shared/CmpHeader'
 import CmpFooter from '@/components/shared/CmpFooter'
 export default {
-  name: 'Index',
+  name: 'Guides',
   components: {
     CmpHeader,
     CmpFooter

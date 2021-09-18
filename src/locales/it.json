@@ -2,6 +2,7 @@
   "hello": "ciao mondo",
   "menu": {
     "guides": "Guide",
+    "lessons": "Lezioni",
     "widgets": "Widget",
     "concepts": "Concetti"
   },
